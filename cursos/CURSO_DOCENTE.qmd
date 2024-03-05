@@ -1,0 +1,543 @@
+---
+title: "ANÁLISIS ESTADÍSTICO DE DATOS EN R-STUDIO"
+subtitle: __CON APLICACIONES EN INGENIERÍA QUÍMICA, QUÍMICA FARMACÉUTICA Y ENERGÍAS RENOVABLES__
+author: "I.Q. JUAN CARLOS MARTÍNEZ MARTÍNEZ"
+format:
+  revealjs:
+    slide-number: true
+    show-slide-number: print
+    chalkboard: true
+    scrollable: true
+    logo: "https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true"
+    footer: "Más Ciencia"
+    transition: zoom
+    background-transition: slide
+
+title-slide-attributes:
+  data-background-image: "https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/1.png?raw=true"
+  data-background-size: cover
+  data-background-opacity: "0.5"
+  data-background-color: "#70B8E8"
+css: styles.css
+bibliography: library.bib
+csl: apa.csl
+toc: False
+toc-expand: False
+toc-depth: 2.0
+toc-title: Temario
+lang: "es-MX"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      collapse=TRUE, 
+                      results = "hide",
+                      warning = FALSE)
+install.packages("knitr")
+library(knitr)
+install.packages("lubridate")
+library(lubridate)
+install.packages("kableExtra")
+library(kableExtra)
+install.packages("psych")
+library(psych)
+install.packages("corrplot")
+library(corrplot)
+install.packages("PerformanceAnalytics")
+library(PerformanceAnalytics)
+```
+
+# MODULO 1: INTRODUCCIÓN AL LENGUAJE `R` EN `R-STUDIO`
+
+## INTRODUCCIÓN AL LENGUAJE {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+-   Software de código abierto
+-   Diseñado con el propósito de hacer estadística
+-   Lenguaje interpretado
+    -   Si sintaxis es simple e intuitiva
+
+```{r echo=TRUE, eval=FALSE}
+combinations(3,2,letters[1:3])
+combinations(3,2,letters[1:3],repeats=TRUE)
+
+permutations(3,2,letters[1:3])
+permutations(3,2,letters[1:3],repeats=TRUE)
+```
+
+## ¿QUIEN LO USA? {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+Todas las personas o compañias que necesiten analizar sus datos de:
+
+::: columns
+::: {.column width="20%"}
+-   Ventas
+-   Usuarios
+-   Clientes
+-   Gastos
+:::
+
+::: {.column width="80%"}
+::: columns
+::: {.column width="50%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/redes.jpg?raw=true){width="80%"}
+:::
+
+::: {.column width="20%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/american.png?raw=true)
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/hp.png?raw=true)
+:::
+
+::: {.column width="20%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/ibm.png?raw=true)
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/xbox.png?raw=true)
+:::
+:::
+:::
+:::
+
+## INSTALACIÓN DE R {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+Uso del [**CRAN**](https://cran.r-project.org/) *(The Comprehensive R Archive Network)* "La red integral de archivos de R" para descargar el instalador del lenguaje R.
+
+::: columns
+::: {.column width="50%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/Rlogo.png?raw=true){width="50%"}
+:::
+
+::: {.column width="50%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/windows.png?raw=true) ![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/ios.png?raw=true) ![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/linux.png?raw=true)
+:::
+:::
+
+## INSTALACIÓN DE R-STUDIO {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+::: columns
+::: {.column width="20%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/R2.png?raw=true)
+:::
+
+::: {.column width="80%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/entorno.png?raw=true)
+:::
+:::
+
+## WORKING DIRECTORY {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+::: columns
+::: {.column width="50%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/escritorio.jpg?raw=true)
+:::
+
+::: {.column width="50%"}
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/escritorio2.jpg?raw=true)
+:::
+:::
+
+## ENTORNO DE R-STUDIO {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/entorno.png?raw=true){width="100%"}
+
+## CONSOLA {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/consola.png?raw=true)
+
+## SCRIP {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/scrip.png?raw=true)
+
+## R-MARKDOWN {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/rmarkdown.png?raw=true)
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**OPERACIONES MATEMÁTICAS BÁSICAS**
+
+|  OPERADOR  |       DESCRIPCIÓN        |
+|:----------:|:------------------------:|
+|    $+$     |           Suma           |
+|    $-$     |          Resta           |
+|    $/$     |         División         |
+| \^, '\*\*' |         Potencia         |
+|  $\%/\%$   |     Cociente entero      |
+|   $\%\%$   | Resto de división entera |
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**OPERACIONES MATEMÁTICAS BÁSICAS**
+
+|  OPERADOR  |  DESCRIPCIÓN   |
+|:----------:|:--------------:|
+| $sqrt(x)$  |  $^2\sqrt{x}$  |
+|  $exp(x)$  |    $e^{x}$     |
+|  $log(x)$  |    $ln(x)$     |
+| $log10(x)$ | $log_{10} (x)$ |
+| $log(x,a)$ |   $log_a(x)$   |
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**FUNCIONES Y CONSTANTES**
+
+|   FUNCIÓN    | DESCRIPCIÓN                                 |
+|:------------:|:--------------------------------------------|
+|   $abs(x)$   | $|x|$                                       |
+| $print(x,n)$ | Muestra en pantalla los $n$ digitos de $x$  |
+| $round(x,n$  | Redondea a $n$ cifras el valor de $x$       |
+|  $floor(x)$  | Obtiene la parte entera de $x$              |
+| $ceiling(x)$ | Obtiene el entero superior del valor de $x$ |
+|  $trunc(x)$  | Trunca el valo entero de $x$                |
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**FUNCIONES Y CONSTANTES**
+
+| CONSTANTES | DESCRIPCIÓN                                         |
+|:----------:|:----------------------------------------------------|
+|    $pi$    | Da el valor de $\pi$                                |
+|   $Inf$    | Se le asigna al valor infinito                      |
+|   $NaN$    | Cuando no hay datos se muestra como: ‘Not a Number’ |
+
+[@R-Studio]
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**OPERACIONES MATEMÁTICAS BÁSICAS**
+
+| OPERADOR  | DESCRIPCIÓN                         |
+|:---------:|:------------------------------------|
+| $sin(x)$  | Calcula la función $seno(x)$        |
+| $cos(x)$  | Calcula la función $coseno(x)$      |
+| $tan(x)$  | Calcula la función $tangente(x)$    |
+| $asin(x)$ | Calcula la función $arcseno(x)$     |
+| $acos(x)$ | Calcula la función $arccoseno (x)$  |
+| $atan(x)$ | Calcula la función $arctangente(x)$ |
+
+Todas las funciones trigonométricas en 'R' trabajan en radianes
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**COMBINATORIA**
+
+|             Función             | Descripción                               |
+|:----------------------------:|:-----------------------------------------|
+|         $factorial(x)$          | Calcula el factorial del valor $x$        |
+|         $choose (n,m)$          | Determina el coeficiente binomial         |
+|  $combination(N,n,elementos)$   | Genera una lista de combinaciones $C_n^N$ |
+| $permutations(N, n, elementos)$ | Genera una lista de permutaciones$P_n^N$  |
+
+[@R-Studio]
+
+## OPERACIONES MATEMÁTICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+**Ejemplos:**
+
+*Gráfica*
+
+```{r echo=TRUE, fig.align='center'}
+x=seq(0,2*pi, length=100)
+y = sin(x)
+y2 = cos(x)
+plot(x,y, type="l", col="blue",lwd=3, 
+     main="Funciones trigonométricas", xlab="x", ylab = "y")
+lines(x,y2,col="green",lwd=3)
+legend("bottomleft",col=c("blue","green"),legend =c("Seno","Coseno"),
+       lwd=5, bty = "n")
+
+```
+
+<!--![Imagen adjunta](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/sen_cos.png?raw=true){width="50%"}-->
+
+## OBJETOS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>
+
+-   VARIABLES
+    -   NUMÉRICAS
+    -   CARACTER
+    -   LÓGICAS
+-   VECTORES
+-   MATRICES
+-   DATAFRAME
+
+</small>
+
+## VARIABLES NUMÉRICAS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+```{r echo=TRUE, eval=TRUE,results='hold'}
+var1 <- 3L
+var2 <- 5.5
+suma = var1 + var2
+var1
+suma
+
+
+typeof(var1)
+class(var1)
+class(var2)
+class(suma)
+```
+
+## VARIABLES CARACTER {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+```{r echo=TRUE, eval=TRUE, results='hold'}
+
+car='a'
+palabra="Hola mundo"
+espacio=" "
+vacio=""
+car
+palabra
+espacio
+vacio
+
+```
+
+## VARIABLE LÓGICA {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+```{r echo=TRUE, eval=TRUE, results='hold'}
+bandera =TRUE
+bandera
+```
+
+## VECTORES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+1.  Conjunto de elementos del mismo tipo (homogeneos) **vector atómico**
+2.  Tamaño finito
+3.  Tienen las siguientes propiedades:
+    -   Tipo **typeof**
+    -   Longitud **length**
+    -   Atributos **attributes**
+
+[@R4DS]
+
+## VECTORES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+Las principales funciones para crear un vector son:
+
+1.  `valor_inicial:valor_final`
+2.  `c(lista de numeros)`
+3.  `seq()`
+4.  `rep()`
+
+```{r echo=TRUE, eval=TRUE, results='hold'}
+v1 <- 1:10
+v2 <- c(1,2,3,4,5,6,7,8,9,10)
+v3 <- c(1:10)
+v4 <- seq(1,10)
+v5 <- rep(1,10)
+```
+
+## OPERACIONES CON VECTORES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+Se puede realizar operaciones matemáticas básicas a los vectores, obteniendo un nuevo vector
+
+-   `fix()` Da la oportunidad de modificar los valores del vector definido con anterioridad
+-   `sort()` Ordena los valores del vector de menor a mayor
+-   `sapply()` Aplica una función u operación mas compleja a los valores de un vector sin necesidad de utilizar una función de bucle o ciclo.
+
+```{r echo=TRUE, eval=TRUE, results='hold'}
+x <- 1:10 # definimos un vector con los valores consecutivos del 1 al 10
+y <- c(-5:0,5:15,3,2,1) # definimos un vector con los valores consecutivos del -5 al 0, del 5 al 15 y finalmente los valores 3,2,1
+```
+
+## OPERACIONES CON VECTORES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+### Básicas
+
+<small> Del vector definido como $x=`r x `$ se desea realizar las siguientes operaciones
+
+-   Obtener el doble de cada valor
+-   Obtener la raiz cuadradad de cada valor
+-   Aplicarle la formula $2*x+54$ </small>
+
+```{r echo=TRUE, eval=TRUE, results='hold'}
+x*2
+sqrt(x)
+2*x+54
+```
+
+## OPERACIONES CON VECTORES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small> Del vector definido como $y=`r y `$ se desea realizar las siguientes operaciones
+
+-   Ordenar los valores de menor a mayor
+-   Sustituir el tercer valor del vector original por el valor $352$
+-   Elevar al cuadrado cada elemento del vector usando la función `sapply()` </small>
+
+```{r echo=TRUE, eval=TRUE, results='hold'}
+y
+sort(y)
+y2 = y
+y2[3]=352
+y2
+sapply(y,function(i) i^2)
+```
+
+## MATRICES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>Pueden ser definidas como vectores de varias dimensiones normalmente 2, cuando un objeto tiene mas de dos dimensiones su nombre es ***Array***</small>
+
+```{r }
+A=matrix("a",nrow = 5, ncol = 5)
+df_A=as.data.frame(A)
+kable(df_A) %>%
+  kable_styling(bootstrap_options="responsive", font_size=32) %>%
+  column_spec(1,border_left=TRUE,border_right=TRUE) %>%
+  column_spec(2,border_left=TRUE,border_right=TRUE) %>%
+  column_spec(3,border_left=TRUE,border_right=TRUE) %>%
+  column_spec(4,border_left=TRUE,border_right=TRUE) %>%
+  column_spec(5,border_left=TRUE,border_right=TRUE)
+```
+
+## MATRICES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+```{r echo=TRUE, eval=FALSE, results='hold'}
+matrix(1:20,ncol = 4)
+matrix(1:20,nrow = 4)
+matrix(1:23,ncol = 4,nrow = 4)
+matrix(1:4,ncol = 4,nrow = 4)
+matrix(rbind(1:4),nrow = 4)
+matrix(rbind(1:4,1:4),nrow = 4)
+matrix(rbind(1:4,1:4),nrow = 4)
+diag(1,nrow=5)
+```
+
+## MATRICES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+```{r echo=TRUE, eval=TRUE, results='markup'}
+matrix(1:20,ncol = 4)
+matrix(1:20,nrow = 4)
+matrix(1:23,ncol = 4,nrow = 4)
+matrix(1:4,ncol = 4,nrow = 4)
+matrix(rbind(1:4),nrow = 4)
+matrix(rbind(1:4,1:4),nrow = 4)
+matrix(rbind(1:4,1:4),nrow = 4)
+diag(1,nrow=5)
+```
+
+## EJERCICIOS {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>
+
+1.  Define una matriz con las siguientes caracteristicas:
+    -   No. de columnas 5
+    -   No. de renglones 7
+    -   Valor constante $3$
+2.  Genera una matriz con los siguientes vectores ordenados por columnas:
+    -   $v_1 =$ `r 1:12`
+    -   $v_2 =$ `r 100:(100-11)`
+    -   $v_3 =$ `r rep(3,12)`
+    -   $v_4 =$ `r -12:-1`
+3.  Genera una matriz con los siguientes vectores ordenados por renglones:
+    -   $v_1 =$ `r 1:12`
+    -   $v_2 =$ `r 100:(100-11)`
+    -   $v_3 =$ `r rep(3,12)`
+    -   $v_4 =$ `r -12:-1`
+
+</small>
+
+## FUNCIONES CON MATRICES {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>
+
+$$M=\begin{pmatrix} 1 & 4 & 7 & 10\\ 2 & 5 & 8 & 11\\ 3 & 6 & 9 & 12 \end{pmatrix}$$
+
+|    **Función**     | **Descripción**                                            |
+|:-----------------:|:----------------------------------------------------|
+|   $diag(matriz)$   | Devuelve la diagonal principal de **matriz**               |
+|   $nrow(matriz)$   | Devuelve el número de filas de **matriz**                  |
+|   $ncol(matriz)$   | Devuelve el número de columnas de **matriz**               |
+|   $dim(matriz)$    | Devuelve las dimensiones de **matriz**                     |
+|   $sum(matriz)$    | Obtenemos la suma de todas las entradas de **matriz**      |
+|   $prod(matriz)$   | Obtenemos el producto de todas las entradas de **matriz**  |
+|   $mean(matriz)$   | Obtenemos la media aritmética de los valores de **matriz** |
+| $colSums(matriz)$  | Obtiene la suma por columnas de **matriz**                 |
+| $rowSums(matriz)$  | Obtiene la suma por renglones de **matriz**                |
+| $colMeans(matriz)$ | Obtiene la media aritmética por columna de **matriz**      |
+| $rowMeans(matriz)$ | Obtiene la meria aritmética por fila de **matriz**         |
+
+</small>
+
+# MODULO 1: Ejercicios Propuestos
+
+Resolver los siguientes ejercicios de práctica
+
+
+## Vectores{background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>
+
+1.  Crear un vector numérico con valores del 1 al 10.
+2.  Crear un vector de caracteres con nombres de colores.
+3.  Sumar dos vectores numéricos elemento por elemento.
+4.  Calcular el producto escalar de dos vectores numéricos.
+5.  Calcular la media de un vector numérico.
+6.  Calcular la mediana de un vector numérico.
+7.  Encontrar el valor máximo y mínimo de un vector numérico.
+8.  Crear un vector booleano que identifique los números pares en un vector numérico.
+9.  Crear un vector de fechas para una semana completa.
+10. Crear un vector numérico con números aleatorios.
+11. Ordenar un vector numérico de forma ascendente.
+12. Ordenar un vector numérico de forma descendente.
+13. Concatenar dos vectores numéricos.
+14. Reemplazar los valores negativos de un vector numérico por ceros.
+15. Calcular la suma acumulada de un vector numérico.
+16. Multiplicar cada elemento de un vector numérico por un escalar.
+17. Calcular la distancia euclidiana entre dos vectores numéricos.
+18. Encontrar los índices de los elementos mayores que cierto valor en un vector numérico.
+19. Crear un vector lógico que identifique los valores duplicados en un vector 1. numérico.
+20. Calcular la longitud de un vector.
+
+</small>
+
+## Matrices{background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>
+
+1.  Crear una matriz 3x3 con valores del 1 al 9.
+2.  Calcular la suma de dos matrices.
+3.  Calcular la resta de dos matrices.
+4.  Calcular el producto de dos matrices.
+5.  Calcular el determinante de una matriz cuadrada.
+6.  Calcular la matriz inversa de una matriz cuadrada.
+7.  Transponer una matriz.
+8.  Calcular la media de cada columna de una matriz.
+9.  Calcular la suma de cada fila de una matriz.
+10. Calcular el producto punto entre dos filas de una matriz.
+11. Calcular la suma de cada columna de una matriz.
+12. Extraer la diagonal de una matriz.
+13. Cambiar el nombre de las filas y columnas de una matriz.
+14. Concatenar dos matrices por filas.
+15. Concatenar dos matrices por columnas.
+16. Reemplazar los valores negativos de una matriz por ceros.
+17. Calcular la matriz de covarianza de una matriz de datos.
+18. Multiplicar cada elemento de una matriz por un escalar.
+19. Encontrar el valor máximo y mínimo de una matriz.
+
+</small>
+
+
+## Operaciones adicionales{background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+<small>
+
+1.  Resolver un sistema de ecuaciones lineales representado por una matriz.
+2.  Calcular la proyección ortogonal de un vector sobre otro.
+3.  Calcular el rango de una matriz.
+4.  Calcular la traza de una matriz.
+5.  Calcular la matriz identidad de tamaño n.
+6.  Calcular la matriz diagonal a partir de un vector.
+7.  Calcular la matriz de correlación a partir de una matriz de datos.
+8.  Resolver un sistema de ecuaciones lineales sobredeterminado.
+9.  Calcular la matriz de covarianza a partir de una matriz de datos.
+10. Resolver un problema de aplicación que involucre vectores y matrices.
+
+</small>
+
+## Solución {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}
+
+![](https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/qr-code_ejercicios_m1.png?raw=true){width="50%" height="50%" fig-alight="center"}
+
+## Bibliografía {background-image="https://github.com/JCBOLTZMAN/MATERIAL_CURSO_R/blob/main/CURSO_R_DOCENTES/img/5.png?raw=true" background-size="10%" background-position="top left"}

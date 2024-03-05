@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>ejercicios_m1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="EJERCICIOS_M1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="EJERCICIOS_M1_files/libs/quarto-html/quarto.js"></script>
+<script src="EJERCICIOS_M1_files/libs/quarto-html/popper.min.js"></script>
+<script src="EJERCICIOS_M1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="EJERCICIOS_M1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="EJERCICIOS_M1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="EJERCICIOS_M1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="EJERCICIOS_M1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="EJERCICIOS_M1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="EJERCICIOS_M1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+
+
+<div style="page-break-after: always;"></div>
+<section id="ejercicios" class="level1">
+<h1>Ejercicios</h1>
+<p>Resolver los siguientes ejercicios de práctica</p>
+<section id="vectores" class="level2">
+<h2 class="anchored" data-anchor-id="vectores">Vectores</h2>
+<ol type="1">
+<li>Crear un vector numérico con valores del 1 al 10.</li>
+<li>Crear un vector de caracteres con nombres de colores.</li>
+<li>Sumar dos vectores numéricos elemento por elemento.</li>
+<li>Calcular el producto escalar de dos vectores numéricos.</li>
+<li>Calcular la media de un vector numérico.</li>
+<li>Calcular la mediana de un vector numérico.</li>
+<li>Encontrar el valor máximo y mínimo de un vector numérico.</li>
+<li>Crear un vector booleano que identifique los números pares en un vector numérico.</li>
+<li>Crear un vector de fechas para una semana completa.</li>
+<li>Crear un vector numérico con números aleatorios.</li>
+<li>Ordenar un vector numérico de forma ascendente.</li>
+<li>Ordenar un vector numérico de forma descendente.</li>
+<li>Concatenar dos vectores numéricos.</li>
+<li>Reemplazar los valores negativos de un vector numérico por ceros.</li>
+<li>Calcular la suma acumulada de un vector numérico.</li>
+<li>Multiplicar cada elemento de un vector numérico por un escalar.</li>
+<li>Calcular la distancia euclidiana entre dos vectores numéricos.</li>
+<li>Encontrar los índices de los elementos mayores que cierto valor en un vector numérico.</li>
+<li>Crear un vector lógico que identifique los valores duplicados en un vector 1. numérico.</li>
+<li>Calcular la longitud de un vector.</li>
+</ol>
+</section>
+<section id="matrices" class="level2">
+<h2 class="anchored" data-anchor-id="matrices">Matrices</h2>
+<ol type="1">
+<li>Crear una matriz 3x3 con valores del 1 al 9.</li>
+<li>Calcular la suma de dos matrices.</li>
+<li>Calcular la resta de dos matrices.</li>
+<li>Calcular el producto de dos matrices.</li>
+<li>Calcular el determinante de una matriz cuadrada.</li>
+<li>Calcular la matriz inversa de una matriz cuadrada.</li>
+<li>Transponer una matriz.</li>
+<li>Calcular la media de cada columna de una matriz.</li>
+<li>Calcular la suma de cada fila de una matriz.</li>
+<li>Calcular el producto punto entre dos filas de una matriz.</li>
+<li>Calcular la suma de cada columna de una matriz.</li>
+<li>Extraer la diagonal de una matriz.</li>
+<li>Cambiar el nombre de las filas y columnas de una matriz.</li>
+<li>Concatenar dos matrices por filas.</li>
+<li>Concatenar dos matrices por columnas.</li>
+<li>Reemplazar los valores negativos de una matriz por ceros.</li>
+<li>Calcular la matriz de covarianza de una matriz de datos.</li>
+<li>Multiplicar cada elemento de una matriz por un escalar.</li>
+<li>Encontrar el valor máximo y mínimo de una matriz.</li>
+</ol>
+</section>
+<section id="operaciones-adicionales" class="level2">
+<h2 class="anchored" data-anchor-id="operaciones-adicionales">Operaciones adicionales</h2>
+<ol type="1">
+<li>Resolver un sistema de ecuaciones lineales representado por una matriz.</li>
+<li>Calcular la proyección ortogonal de un vector sobre otro.</li>
+<li>Calcular el rango de una matriz.</li>
+<li>Calcular la traza de una matriz.</li>
+<li>Calcular la matriz identidad de tamaño n.</li>
+<li>Calcular la matriz diagonal a partir de un vector.</li>
+<li>Calcular la matriz de correlación a partir de una matriz de datos.</li>
+<li>Resolver un sistema de ecuaciones lineales sobredeterminado.</li>
+<li>Calcular la matriz de covarianza a partir de una matriz de datos.</li>
+<li>Resolver un problema de aplicación que involucre vectores y matrices.</li>
+</ol>
+<div style="page-break-after: always;"></div>
+</section>
+</section>
+<section id="solución" class="level1">
+<h1>Solución</h1>
+<p>Resolver los siguientes ejercicios de práctica</p>
+<p><span class="citation" data-cites="R-Studio">[@R-Studio]</span></p>
+<section id="vectores-1" class="level2">
+<h2 class="anchored" data-anchor-id="vectores-1">Vectores</h2>
+<p><strong>Crear un vector numérico con valores del 1 al 10.</strong></p>
+<ul>
+<li>Opción 1:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Opción 2:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li>Opción 3:</li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Crear un vector de caracteres con nombres de colores.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="st">"Azul"</span>,<span class="st">"Negro"</span>,<span class="st">"gris"</span>,<span class="st">"verde"</span>,<span class="st">"naranja"</span>,<span class="st">"rosa"</span>,<span class="st">"rojo"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Sumar dos vectores numéricos elemento por elemento.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>V1 <span class="ot">=</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>V2 <span class="ot">=</span> <span class="dv">11</span><span class="sc">:</span><span class="dv">20</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>V3 <span class="ot">=</span> V1 <span class="sc">+</span> V2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>El vector 1 contiene los valores <span class="math inline">\(V_1 =\)</span> 1, 2, 3, 4, 5, 6, 7, 8, 9, 10</p>
+<p>El vector 2 contiene los valores <span class="math inline">\(V_2 =\)</span> 11, 12, 13, 14, 15, 16, 17, 18, 19, 20</p>
+<p>Al sumar los valores de cada vector obtenemos <span class="math inline">\(V_3 =\)</span> 12, 14, 16, 18, 20, 22, 24, 26, 28, 30</p>
+<hr>
+<p><strong>Calcular el producto escalar de dos vectores numéricos.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>PE<span class="ot">=</span> V1 <span class="sc">%*%</span> V2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Al realizar el producto escalar de los vectores del punto anterior <span class="math inline">\(V_1\)</span> y <span class="math inline">\(V_2\)</span>, el resultado es: <span class="math inline">\(V_1 \cdot V_2=\)</span> 935</p>
+<hr>
+<p><strong>Calcular la media de un vector numérico.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>med <span class="ot">=</span> <span class="fu">mean</span>(V1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para los valores del vector <span class="math inline">\(V_1 =\)</span> la media de sus valores es: 5.5</p>
+<hr>
+<p><strong>Calcular la mediana de un vector numérico.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mediana<span class="ot">=</span><span class="fu">median</span>(V2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para los valores del vector <span class="math inline">\(V_2 =\)</span> la mediana de sus valores es: 15.5</p>
+<hr>
+<p><strong>Encontrar el valor máximo y mínimo de un vector numérico.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>maximo <span class="ot">=</span> <span class="fu">max</span>(x)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>minimo <span class="ot">=</span> <span class="fu">min</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para un vector con <span class="math inline">\(10\)</span> valores aleatorios entre <span class="math inline">\(1\)</span> y <span class="math inline">\(50\)</span>, el cual contiene los valores <span class="math inline">\(x = [\)</span> 31, 15, 14, 3, 42, 43, 37, 48, 25, 26 <span class="math inline">\(]\)</span> el número máximo es: 48 y el número mínimo del mismo vector es: 3</p>
+<hr>
+<p><strong>Crear un vector booleano que identifique los números pares en un vector numérico.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>pares <span class="ot">=</span> x<span class="sc">%%</span><span class="dv">2</span><span class="sc">==</span><span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Usando los mismos valores del vector <span class="math inline">\(x =[\)</span> 31, 15, 14, 3, 42, 43, 37, 48, 25, 26 <span class="math inline">\(]\)</span> al resolver el ejercicio obtenemos el vector <span class="math inline">\(pares = [\)</span> FALSE, FALSE, TRUE, FALSE, TRUE, FALSE, FALSE, TRUE, FALSE, TRUE <span class="math inline">\(]\)</span></p>
+<hr>
+<p><strong>Crear un vector de fechas para una semana completa.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>inicio <span class="ot">=</span> <span class="fu">dmy</span>(<span class="st">"19/02/2024"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>fin <span class="ot">=</span> inicio <span class="sc">+</span> <span class="fu">days</span>(<span class="dv">6</span>)</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>semana <span class="ot">=</span> <span class="fu">seq</span>(inicio,fin,<span class="at">by=</span><span class="st">"day"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para resolver este ejercicio es necesario instalar y activar el paquete <code>lubridate</code>, se debe escribir la fecha de inicio y la guardamos en <span class="math inline">\(inicio =\)</span> 2024-02-19 y a esta fecha sumarle <span class="math inline">\(6\)</span> días para obtener el día final de la semana o la fecha que está una semana despues de la fecha inicial <span class="math inline">\(fin\)</span> 2024-02-25, finalmente se genera el vector <span class="math inline">\(semana\)</span> con los valores: [<span class="math inline">\(2024-02-19, 2024-02-20, 2024-02-21, 2024-02-22, 2024-02-23, 2024-02-24, 2024-02-25\)</span>]</p>
+<hr>
+<p><strong>Crear un vector numérico con números aleatorios.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">123</span>)</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">50</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Podemos utilizar el mismo código para obtener el vector con números aleatorios <span class="math inline">\(x =\)</span> <span class="math inline">\([\)</span> <span class="math inline">\(31, 15, 14, 3, 42, 43, 37, 48, 25, 26\)</span> <span class="math inline">\(]\)</span></p>
+<hr>
+<p><strong>Ordenar un vector numérico de forma ascendente.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Ordenar un vector numérico de forma descendente.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(x, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Concatenar dos vectores numéricos.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">35</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">sample</span>(<span class="sc">-</span><span class="dv">50</span><span class="sc">:</span><span class="dv">50</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>z <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">0</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>s <span class="ot">=</span> <span class="fu">c</span>(y,z)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Con el código anterior se generan dos vectores con <span class="math inline">\(10\)</span> valores aleatorios siendo: <span class="math display">\[y=[ 23, 19, -43, 14, -44, -40, -37, 50, -33, 47 ]\]</span> <span class="math display">\[z=[ 31, 72, 88, 26, 84, 82, 13, 4, 5, 6 ]\]</span> al concatenarlos con el código <code>s=c(y,z)</code> obtenemos el siguiente vector: <span class="math display">\[s = [23, 19, -43, 14, -44, -40, -37, 50, -33, 47, 31, 72, 88, 26, 84, 82, 13, 4, 5, 6]\]</span></p>
+<hr>
+<p><strong>Reemplazar los valores negativos de un vector numérico por ceros.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>cero <span class="ot">=</span> <span class="fu">ifelse</span>(y<span class="sc">&lt;</span><span class="dv">0</span>,<span class="dv">0</span>,y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>El código anterior genera un nuevo vector basandose en el vector <span class="math inline">\(y\)</span>, pero los valores negativos de <span class="math inline">\(y\)</span> se remplazaron por <span class="math inline">\(0\)</span> obteniendo el siguiente vector <span class="math display">\[y=[23, 19, -43, 14, -44, -40, -37, 50, -33, 47]\]</span> <span class="math display">\[cero=[23, 19, 0, 14, 0, 0, 0, 50, 0, 47]\]</span></p>
+<hr>
+<p><strong>Calcular la suma acumulada de un vector numérico.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>valores <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">5</span><span class="sc">:</span><span class="dv">20</span>)</span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>suma <span class="ot">=</span> <span class="fu">cumsum</span>(valores)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Del vector <span class="math inline">\(valores = [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]\)</span> la suma de sus valores es: <span class="math inline">\(suma =[5, 11, 18, 26, 35, 45, 56, 68, 81, 95, 110, 126, 143, 161, 180, 200]\)</span>, el último valor de este vector representa la suma acumulada de todos los valores</p>
+<hr>
+<p><strong>Multiplicar cada elemento de un vector numérico por un escalar.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>k <span class="ot">=</span> <span class="dv">3</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>valores_mult <span class="ot">=</span> k<span class="sc">*</span>valores</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Utilizando el mismo vector del punto anterior <span class="math inline">\(valores =[ 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]\)</span> y la constante <span class="math inline">\(k =3\)</span>, al multiplicar el vector por el escalar se obtiene el siguiente vector <span class="math inline">\(v_k = [15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60]\)</span></p>
+<hr>
+<p><strong>Calcular la distancia euclidiana entre dos vectores numéricos.</strong></p>
+<p>La distancia euclidiana entre dos vectores numéricos la define la ecuación <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>: <span class="math display">\[d_E (P,Q) = \sqrt{\left( p_1-q_1 \right)^2 + \left(p_2 - q_2 \right)^2+...\left( p_n-q_n \right)^2} = \sqrt{\varSigma_{i=1}^{n}\left( p_i-q_i \right)^2}\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">61</span>)</span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>a <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>b <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size =</span> <span class="dv">10</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>d <span class="ot">=</span> <span class="fu">sqrt</span> ( <span class="fu">sum</span> ((a <span class="sc">-</span> b) <span class="sc">^</span> <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para los vectores <span class="math inline">\(a\)</span> y <span class="math inline">\(b\)</span> la distancia euclidiana es: <span class="math inline">\(147.543214\)</span> <span class="math display">\[a=[12, 71, 23, 42, 20, 98, 75, 97, 4, 89]\]</span> <span class="math display">\[b=[96, 67, 80, 78, 40, 31, 64, 27, 15, 78]\]</span></p>
+<hr>
+<p><strong>Encontrar los índices de los elementos mayores que cierto valor en un vector numérico.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>numero <span class="ot">=</span> <span class="dv">50</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">61</span>)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>c <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">100</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>indice <span class="ot">=</span> <span class="fu">which</span>(c <span class="sc">&gt;</span> numero)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>c</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>indice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p>Crear un vector lógico que identifique los valores duplicados en un vector numérico.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">65</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>c <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>, <span class="at">size =</span> <span class="dv">5</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>vector_logico <span class="ot">&lt;-</span> <span class="fu">duplicated</span>(c) <span class="sc">|</span> <span class="fu">duplicated</span>(c, <span class="at">fromLast =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>c</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>vector_logico</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 3 2 4 1 1</span></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] FALSE FALSE FALSE  TRUE  TRUE</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Calcular la longitud de un vector.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>a</span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(a)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="do">##  [1] 12 71 23 42 20 98 75 97  4 89</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] 10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="matrices-1" class="level2">
+<h2 class="anchored" data-anchor-id="matrices-1">Matrices</h2>
+<p>En este documento no se podrá observar la forma de la matriz, sin embargo, se observarán los datos de estas, la forma de la matriz creada u obtenida solo se vería si las operaciones se realizan en la consola de <code>RStudio</code></p>
+<p><strong>Crear una matriz 3x3 con valores del 1 al 9.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">matrix</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">9</span>, <span class="at">nrow =</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Genera la matriz siguiente</p>
+<p><span class="math display">\[\begin{equation}
+  \begin{vmatrix}
+    &amp;1 &amp; 4 &amp; 7&amp;\\
+    &amp;2 &amp; 5 &amp; 8&amp;\\
+    &amp;3 &amp; 6 &amp; 9&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<hr>
+<p><strong>Calcular la suma de dos matrices.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="dv">5</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">nrow=</span><span class="dv">4</span>)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>m2 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="dv">25</span><span class="sc">:</span><span class="dv">40</span>, <span class="at">nrow =</span> <span class="dv">4</span>)</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>m3 <span class="ot">=</span> m1<span class="sc">+</span>m2</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span class="math display">\[\begin{equation} m_1 =
+  \begin{vmatrix}
+     &amp;5 &amp; 9 &amp; 13  &amp; 17&amp; \\
+     &amp;6 &amp; 10 &amp; 14 &amp; 18&amp; \\
+     &amp;7 &amp; 11 &amp; 15 &amp; 19&amp; \\
+     &amp;8 &amp; 12 &amp; 16 &amp; 20&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} m_2 =
+  \begin{vmatrix}
+     &amp;25 &amp; 29 &amp; 33  &amp; 37&amp; \\
+     &amp;26 &amp; 30 &amp; 34 &amp; 38&amp; \\
+     &amp;27 &amp; 31 &amp; 35 &amp; 39&amp; \\
+     &amp;28 &amp; 32 &amp; 36 &amp; 40&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} m_3 = m_1 + m_2 =
+  \begin{vmatrix}
+     &amp; 30 &amp; 38 &amp; 46 &amp; 54 &amp; \\
+     &amp; 32 &amp; 40 &amp; 48 &amp; 56 &amp; \\
+     &amp; 34 &amp; 42 &amp; 50 &amp; 58 &amp; \\
+     &amp; 36 &amp; 44 &amp; 52 &amp; 60 &amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<hr>
+<p><strong>Calcular la resta de dos matrices.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="dv">5</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">nrow=</span><span class="dv">4</span>)</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>m2 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="dv">25</span><span class="sc">:</span><span class="dv">40</span>, <span class="at">nrow =</span> <span class="dv">4</span>)</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>m3 <span class="ot">=</span> m1<span class="sc">-</span>m2</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span class="math display">\[\begin{equation} m_1 =
+  \begin{vmatrix}
+     &amp;5 &amp; 9 &amp; 13  &amp; 17&amp; \\
+     &amp;6 &amp; 10 &amp; 14 &amp; 18&amp; \\
+     &amp;7 &amp; 11 &amp; 15 &amp; 19&amp; \\
+     &amp;8 &amp; 12 &amp; 16 &amp; 20&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} m_2 =
+  \begin{vmatrix}
+     &amp;25 &amp; 29 &amp; 33  &amp; 37&amp; \\
+     &amp;26 &amp; 30 &amp; 34 &amp; 38&amp; \\
+     &amp;27 &amp; 31 &amp; 35 &amp; 39&amp; \\
+     &amp;28 &amp; 32 &amp; 36 &amp; 40&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} m_3 = m_1 - m_2 =
+  \begin{vmatrix}
+     &amp; -20 &amp; -20 &amp; -20 &amp;-20&amp; \\
+     &amp; -20 &amp; -20 &amp; -20 &amp;-20&amp; \\
+     &amp; -20 &amp; -20 &amp; -20 &amp;-20&amp; \\
+     &amp; -20 &amp; -20 &amp; -20 &amp;-20&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<hr>
+<p><strong>Calcular el producto de dos matrices.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>m1 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="dv">5</span><span class="sc">:</span><span class="dv">20</span>, <span class="at">nrow=</span><span class="dv">4</span>)</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>m2 <span class="ot">=</span> <span class="fu">matrix</span>(<span class="dv">25</span><span class="sc">:</span><span class="dv">40</span>, <span class="at">nrow =</span> <span class="dv">4</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>m3 <span class="ot">=</span> m1<span class="sc">*</span>m2</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span class="math display">\[\begin{equation} m_1 =
+  \begin{vmatrix}
+     &amp;5 &amp; 9 &amp; 13  &amp; 17&amp; \\
+     &amp;6 &amp; 10 &amp; 14 &amp; 18&amp; \\
+     &amp;7 &amp; 11 &amp; 15 &amp; 19&amp; \\
+     &amp;8 &amp; 12 &amp; 16 &amp; 20&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} m_2 =
+  \begin{vmatrix}
+     &amp;25 &amp; 29 &amp; 33  &amp; 37&amp; \\
+     &amp;26 &amp; 30 &amp; 34 &amp; 38&amp; \\
+     &amp;27 &amp; 31 &amp; 35 &amp; 39&amp; \\
+     &amp;28 &amp; 32 &amp; 36 &amp; 40&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} m_3 = m_1 * m_2
+  \begin{vmatrix}
+     &amp; 125 &amp; 261 &amp; 429 &amp; 629 &amp; \\
+     &amp; 156 &amp; 300 &amp; 476 &amp; 684 &amp; \\
+     &amp; 189 &amp; 341 &amp; 525 &amp; 741 &amp; \\
+     &amp; 224 &amp; 384 &amp; 576 &amp; 800 &amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<hr>
+<p><strong>Calcular el determinante de una matriz cuadrada.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">4</span>)</span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>d<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">7</span>)</span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="fu">rbind</span>(a,b,d)</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a><span class="fu">det</span>(B)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><span class="math display">\[\begin{equation} det(B) = det
+  \begin{vmatrix}
+     &amp; 4 &amp; 5 &amp; 4 \\
+     &amp; 3 &amp; 4 &amp; 4 \\
+     &amp; 8 &amp; 7 &amp; 7
+  \end{vmatrix}  = 11
+\end{equation}\]</span></p>
+<hr>
+<p><strong>Calcular la matriz inversa de una matriz cuadrada.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">4</span>)</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>)</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>d<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">7</span>)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="fu">rbind</span>(a,b,d)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">solve</span>(B))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Transponer una matriz</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">876</span>)</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>t_m<span class="ot">=</span><span class="fu">t</span>(m)</span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(t_m) <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"B"</span>,<span class="st">"C"</span>,<span class="st">"D"</span>,<span class="st">"E"</span>,</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a>                  <span class="st">"F"</span>,<span class="st">"G"</span>,<span class="st">"H"</span>,<span class="st">"I"</span>,<span class="st">"J"</span>)</span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(t_m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Calcular la media de cada columna de una matriz</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">876</span>)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>media <span class="ot">=</span> <span class="fu">colMeans</span>(m)</span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">rbind</span>(m,media)</span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">headTail</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Calcular la suma de cada fila de una matriz</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">876</span>)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>suma <span class="ot">=</span> <span class="fu">rowSums</span>(m)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(m,suma)</span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">headTail</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Calcular el producto punto entre dos filas de una matriz</strong></p>
+<p>Para este ejemplo las filas de la matriz deberán usarse como vectores, para realizar el producto punto.</p>
+<p>El producto punto es la suma de los productos de cada elemento de cada vector, en el caso de dos vectores. <span class="math display">\[v_1 \cdot v_2 = (a_{v_1}*a_{v_2})+(b_{v_1}*b_{v_2})+(c_{v_1}*c_{v_2})+...\]</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">876</span>)</span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">headTail</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>De esta matriz usaremos la fila <span class="math inline">\(1\)</span> y <span class="math inline">\(2\)</span>, para obtener el producto punto.</p>
+<p>Donde cada fila tendrá los siguientes valores: <span class="math display">\[f1= 351, 363, 78, 746, 839\]</span> <span class="math display">\[f_2= 183, 172, 210, 451, 844\]</span> el producto punto lo obtenemos con el siguiente código</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>r<span class="ot">=</span>f1<span class="sc">%*%</span>f2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Obteniendo el valor <span class="math inline">\(1.187611\times 10^{6}\)</span></p>
+<hr>
+<p><strong>Calcular la suma de cada columna de una matriz.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">876</span>)</span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">100</span>,<span class="at">replace =</span> F)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>suma <span class="ot">=</span> <span class="fu">colSums</span>(m)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">rbind</span>(m,suma)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">headTail</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Extraer la diagonal de una matriz.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">4</span>)</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>)</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>d<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">7</span>)</span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="fu">rbind</span>(a,b,d)</span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(B)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>De la matriz mostrada los valores de la diagonal son: 4, 4, 7 con el siguiente código:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">diag</span>(B)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Cambiar el nombre de las filas y columnas de una matriz.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>a<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">4</span>)</span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a>b<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">4</span>)</span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>d<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">8</span>,<span class="dv">7</span>,<span class="dv">7</span>)</span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>B<span class="ot">&lt;-</span><span class="fu">rbind</span>(a,b,d)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(B)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Las columnas de esta matriz no están nombradas y las filas se llamán a, b, d, con el siguiente código se pueden modificar ambas caracteristicas de la matriz.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(B)<span class="ot">=</span><span class="fu">c</span>(<span class="st">"C1"</span>,<span class="st">"C2"</span>,<span class="st">"C3"</span>)</span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(B)<span class="ot">=</span><span class="fu">c</span>(<span class="st">"F1"</span>,<span class="st">"F2"</span>,<span class="st">"F3"</span>)</span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(B)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Concatenar dos matrices por filas.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(A)</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(B)</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">rbind</span>(A,B))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Concatenar dos matrices por columnas.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">matrix</span>(<span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">11</span>,<span class="dv">12</span>,<span class="dv">13</span>), <span class="at">nrow =</span> <span class="dv">2</span>, <span class="at">ncol =</span> <span class="dv">2</span>)</span>
+<span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(A)</span>
+<span id="cb40-4"><a href="#cb40-4" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(B)</span>
+<span id="cb40-5"><a href="#cb40-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb40-6"><a href="#cb40-6" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(<span class="fu">cbind</span>(A,B))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Reemplazar los valores negativos de una matriz por ceros.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">879</span>)</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>A<span class="ot">=</span><span class="fu">matrix</span>(<span class="fu">sample</span>(<span class="sc">-</span><span class="dv">1000</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">16</span>,<span class="at">replace =</span> F),<span class="at">nrow =</span> <span class="dv">4</span>)</span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(A)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a>cero <span class="ot">=</span> <span class="fu">ifelse</span>(A<span class="sc">&lt;</span><span class="dv">0</span>,<span class="dv">0</span>,A)</span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(cero)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p>Calcular la matriz de covarianza de una matriz de datos.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">174</span>)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb42-4"><a href="#cb42-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb42-5"><a href="#cb42-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb42-6"><a href="#cb42-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb42-7"><a href="#cb42-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb42-8"><a href="#cb42-8" aria-hidden="true" tabindex="-1"></a>cov_m<span class="ot">=</span><span class="fu">cov</span>(m)</span>
+<span id="cb42-9"><a href="#cb42-9" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m)</span>
+<span id="cb42-10"><a href="#cb42-10" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(cov_m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Multiplicar cada elemento de una matriz por un escalar.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">14</span>)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m)</span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a>k <span class="ot">=</span> <span class="dv">4</span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a>m <span class="ot">=</span> m<span class="sc">*</span>k</span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Encontrar el valor máximo y mínimo de una matriz.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4</span>)</span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb44-6"><a href="#cb44-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb44-7"><a href="#cb44-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb44-8"><a href="#cb44-8" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m)</span>
+<span id="cb44-9"><a href="#cb44-9" aria-hidden="true" tabindex="-1"></a><span class="fu">min</span>(m)</span>
+<span id="cb44-10"><a href="#cb44-10" aria-hidden="true" tabindex="-1"></a><span class="fu">max</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">C1</th>
+<th style="text-align: right;">C2</th>
+<th style="text-align: right;">C3</th>
+<th style="text-align: right;">C4</th>
+<th style="text-align: right;">C5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">504</td>
+<td style="text-align: right;">312</td>
+<td style="text-align: right;">803</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">511</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">587</td>
+<td style="text-align: right;">414</td>
+<td style="text-align: right;">411</td>
+<td style="text-align: right;">197</td>
+<td style="text-align: right;">203</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">819</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">365</td>
+<td style="text-align: right;">911</td>
+<td style="text-align: right;">592</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">771</td>
+<td style="text-align: right;">614</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">893</td>
+<td style="text-align: right;">910</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">405</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">684</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">869</td>
+<td style="text-align: right;">453</td>
+<td style="text-align: right;">692</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">371</td>
+<td style="text-align: right;">385</td>
+<td style="text-align: right;">893</td>
+<td style="text-align: right;">832</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">757</td>
+<td style="text-align: right;">596</td>
+<td style="text-align: right;">898</td>
+<td style="text-align: right;">880</td>
+<td style="text-align: right;">304</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">698</td>
+<td style="text-align: right;">767</td>
+<td style="text-align: right;">928</td>
+<td style="text-align: right;">433</td>
+<td style="text-align: right;">152</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">307</td>
+<td style="text-align: right;">747</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">892</td>
+</tr>
+</tbody>
+</table>
+</div>
+<pre><code>## [1] 54
+## [1] 928</code></pre>
+</div>
+<p>De esta matriz el valor máximo es <span class="math inline">\(928\)</span> y el valor mínimo es <span class="math inline">\(54\)</span></p>
+<hr>
+</section>
+<section id="operaciones-adicionales-1" class="level2">
+<h2 class="anchored" data-anchor-id="operaciones-adicionales-1">Operaciones adicionales</h2>
+<p><strong>Resolver un sistema de ecuaciones lineales representado por una matriz</strong></p>
+<p>Resolver el siguiente sistema de ecuaciones: <span class="math display">\[3x-3y-5z=-77\]</span> <span class="math display">\[8x-7y-5z=-138\]</span> <span class="math display">\[-4x+4y+7z=105\]</span></p>
+<p>Primero generaremos la matriz de los coeficientes de cada variable en cada ecuación y el vector de los resultados, obteniendo lo siguiente: <span class="math display">\[\begin{equation} coeficientes=
+  \begin{vmatrix}
+    &amp;3 &amp; -3 &amp; -5&amp;\\
+    &amp;8 &amp; -7 &amp; -5&amp;\\
+    &amp;-4 &amp; 4 &amp; 7&amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p><span class="math display">\[\begin{equation} resultados=
+  \begin{vmatrix}
+    &amp;-77 &amp; \\
+    &amp;-138 &amp; \\
+    &amp;105 &amp;
+  \end{vmatrix}
+\end{equation}\]</span></p>
+<p>Con el siguiente código</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">8</span>,<span class="sc">-</span><span class="dv">4</span>)</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">3</span>,<span class="sc">-</span><span class="dv">7</span>,<span class="dv">4</span>)</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>z<span class="ot">=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="sc">-</span><span class="dv">5</span>,<span class="dv">7</span>)</span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>coeficientes<span class="ot">=</span><span class="fu">cbind</span>(x,y,z)</span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>resultados <span class="ot">=</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">77</span>,<span class="sc">-</span><span class="dv">138</span>,<span class="dv">105</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Debemos calcular la matriz inversa de los coeficientes con el siguiente código</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>C_1<span class="ot">=</span><span class="fu">solve</span>(coeficientes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Obteniendo la siguiente matriz</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(C_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Finalmente realizamos el producto punto con la matriz inversa obtenida y el vector de resultados obteniendo los valores de las variables</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb49"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>sol <span class="ot">=</span> C_1<span class="sc">%*%</span>resultados</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(sol)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<hr>
+<p><strong>Calcular la proyección ortogonal de un vector sobre otro.</strong></p>
+<p>La teoría de la proyección de un vector en otro vector lo puedes encontrar en el siguiente link <a href="https://ekuatio.com/proyeccion-de-un-vector-sobre-otro-vector-ejercicios-resueltos/">Proyección de un vector sobre otro vector. Ejercicios resueltos</a>, de esa fuente podemos obtener las siguientes formulas <span class="math display">\[\left| \vec{P_{u,v}} \right|= \frac{\vec{u} \cdot \vec{v}}{\left| \vec{v}\right|}\]</span> <span class="math display">\[\vec{P_{u,v}} = \frac{\vec{u} \cdot \vec{v}}{\left| \vec{v}\right|} \cdot \vec{u}\]</span> Las cuales representan el módulo y el vector de la proyección de un vector sobre otro, el modulo es un escalar <span class="math inline">\(\left| \vec{P_{u,v}} \right|\)</span>.</p>
+<p>Debemos definir los vectores siguientes: <span class="math display">\[\vec{u} = \langle 1,3,7 \rangle\]</span> <span class="math display">\[\vec{v} = \langle -1,2,-5 \rangle\]</span> con el siguiente código:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>u<span class="ot">=</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">7</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>v<span class="ot">=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">1</span>,<span class="dv">2</span>,<span class="sc">-</span><span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Determinaremos el módulo del vector <span class="math inline">\(\vec{u}\)</span> con el siguiente código:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb51"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>mod_v <span class="ot">=</span> <span class="fu">norm</span>(v,<span class="at">type =</span> <span class="st">"2"</span>)</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>mod_v</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Con este valor podemos utilizar la formula completa para obtener el vector de la proyección de <span class="math inline">\(\vec{u}\)</span> sobre <span class="math inline">\(\vec{v}\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>proy_uv <span class="ot">=</span> ((u<span class="sc">%*%</span>v)<span class="sc">/</span>mod_v)<span class="sc">*</span>v</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Obteniendo el vector <span class="math inline">\(\vec{P_{u,v}} =\langle 5.4772, -10.9545, 27.3861\rangle\)</span> y su módulo es: <span class="math inline">\(\left| \vec{P_{u,v}} \right| = 30\)</span></p>
+<hr>
+<p><strong>Calcular el rango de una matriz.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">4</span>)</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb53-6"><a href="#cb53-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">10</span>,<span class="at">replace =</span> F)</span>
+<span id="cb53-7"><a href="#cb53-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb53-8"><a href="#cb53-8" aria-hidden="true" tabindex="-1"></a>rango <span class="ot">=</span> <span class="fu">qr</span>(m)<span class="sc">$</span>rank</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para la siguiente matriz el rango<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> es: <span class="math inline">\(r_m = 5\)</span></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: right;">C1</th>
+<th style="text-align: right;">C2</th>
+<th style="text-align: right;">C3</th>
+<th style="text-align: right;">C4</th>
+<th style="text-align: right;">C5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">504</td>
+<td style="text-align: right;">312</td>
+<td style="text-align: right;">803</td>
+<td style="text-align: right;">300</td>
+<td style="text-align: right;">511</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">587</td>
+<td style="text-align: right;">414</td>
+<td style="text-align: right;">411</td>
+<td style="text-align: right;">197</td>
+<td style="text-align: right;">203</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">819</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">365</td>
+<td style="text-align: right;">911</td>
+<td style="text-align: right;">592</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">771</td>
+<td style="text-align: right;">614</td>
+<td style="text-align: right;">560</td>
+<td style="text-align: right;">893</td>
+<td style="text-align: right;">910</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">130</td>
+<td style="text-align: right;">176</td>
+<td style="text-align: right;">150</td>
+<td style="text-align: right;">405</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">684</td>
+<td style="text-align: right;">152</td>
+<td style="text-align: right;">869</td>
+<td style="text-align: right;">453</td>
+<td style="text-align: right;">692</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">371</td>
+<td style="text-align: right;">385</td>
+<td style="text-align: right;">893</td>
+<td style="text-align: right;">832</td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">757</td>
+<td style="text-align: right;">596</td>
+<td style="text-align: right;">898</td>
+<td style="text-align: right;">880</td>
+<td style="text-align: right;">304</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">698</td>
+<td style="text-align: right;">767</td>
+<td style="text-align: right;">928</td>
+<td style="text-align: right;">433</td>
+<td style="text-align: right;">152</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">307</td>
+<td style="text-align: right;">747</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">892</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr>
+<p><strong>Calcular la traza de una matriz.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">78</span>)</span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">5</span>,<span class="at">replace =</span> F)</span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">5</span>,<span class="at">replace =</span> F)</span>
+<span id="cb55-4"><a href="#cb55-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">5</span>,<span class="at">replace =</span> F)</span>
+<span id="cb55-5"><a href="#cb55-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">5</span>,<span class="at">replace =</span> F)</span>
+<span id="cb55-6"><a href="#cb55-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">5</span>,<span class="at">replace =</span> F)</span>
+<span id="cb55-7"><a href="#cb55-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb55-8"><a href="#cb55-8" aria-hidden="true" tabindex="-1"></a>tr <span class="ot">=</span> <span class="fu">sum</span>(<span class="fu">diag</span>(m))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Para la siguiente tabla la traza<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> es igual a: <span class="math inline">\(T_r(A) = 2994\)</span></p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">C1</th>
+<th style="text-align: right;">C2</th>
+<th style="text-align: right;">C3</th>
+<th style="text-align: right;">C4</th>
+<th style="text-align: right;">C5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">879</td>
+<td style="text-align: right;">648</td>
+<td style="text-align: right;">416</td>
+<td style="text-align: right;">646</td>
+<td style="text-align: right;">781</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">462</td>
+<td style="text-align: right;">930</td>
+<td style="text-align: right;">739</td>
+<td style="text-align: right;">458</td>
+<td style="text-align: right;">336</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">532</td>
+<td style="text-align: right;">470</td>
+<td style="text-align: right;">219</td>
+<td style="text-align: right;">495</td>
+<td style="text-align: right;">813</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">847</td>
+<td style="text-align: right;">933</td>
+<td style="text-align: right;">318</td>
+<td style="text-align: right;">565</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">988</td>
+<td style="text-align: right;">241</td>
+<td style="text-align: right;">456</td>
+<td style="text-align: right;">440</td>
+<td style="text-align: right;">401</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Calcular la matriz identidad de tamaño n.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>n <span class="ot">=</span> <span class="dv">5</span></span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>I <span class="ot">=</span> <span class="fu">diag</span>(<span class="dv">1</span>,<span class="at">nrow =</span> n)</span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(I)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Calcular la matriz diagonal a partir de un vector.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">833</span>)</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>vector <span class="ot">=</span> <span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">5</span>,<span class="at">replace =</span> F)</span>
+<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a>m_d <span class="ot">=</span> <span class="fu">diag</span>(vector)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<table class="table">
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">511</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">183</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">808</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">849</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">405</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Calcular la matriz de correlación a partir de una matriz de datos.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">831</span>)</span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb58-6"><a href="#cb58-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb58-7"><a href="#cb58-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb58-8"><a href="#cb58-8" aria-hidden="true" tabindex="-1"></a>corr_m <span class="ot">=</span> <span class="fu">round</span>(<span class="fu">cor</span>(m),<span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">C1</th>
+<th style="text-align: left;">C2</th>
+<th style="text-align: left;">C3</th>
+<th style="text-align: left;">C4</th>
+<th style="text-align: left;">C5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C1</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">-0.28</td>
+<td style="text-align: left;">-0.04</td>
+<td style="text-align: left;">0.14</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">0.11</td>
+<td style="text-align: left;">0.32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3</td>
+<td style="text-align: left;">-0.28</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-0.13</td>
+<td style="text-align: left;">0.08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C4</td>
+<td style="text-align: left;">-0.04</td>
+<td style="text-align: left;">0.11</td>
+<td style="text-align: left;">-0.13</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+<td style="text-align: left;">…</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C21</td>
+<td style="text-align: left;">0.02</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">0.11</td>
+<td style="text-align: left;">0.32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C31</td>
+<td style="text-align: left;">-0.28</td>
+<td style="text-align: left;">-0.02</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-0.13</td>
+<td style="text-align: left;">0.08</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C41</td>
+<td style="text-align: left;">-0.04</td>
+<td style="text-align: left;">0.11</td>
+<td style="text-align: left;">-0.13</td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">-0.03</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C5</td>
+<td style="text-align: left;">0.14</td>
+<td style="text-align: left;">0.32</td>
+<td style="text-align: left;">0.08</td>
+<td style="text-align: left;">-0.03</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<p>La cual es mas entendible si lo observamos en una tabla como la siguiente</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot</span>(corr_m,</span>
+<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>         <span class="at">type =</span> <span class="st">"lower"</span>,</span>
+<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">upper =</span> <span class="st">"pie"</span>,     </span>
+<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">lower =</span> <span class="st">"color"</span>,</span>
+<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>         <span class="at">p.mat =</span> corr_m,</span>
+<span id="cb59-6"><a href="#cb59-6" aria-hidden="true" tabindex="-1"></a>         <span class="at">tl.col=</span><span class="st">"Black"</span>,</span>
+<span id="cb59-7"><a href="#cb59-7" aria-hidden="true" tabindex="-1"></a>         <span class="at">tl.srt =</span> <span class="dv">0</span>,</span>
+<span id="cb59-8"><a href="#cb59-8" aria-hidden="true" tabindex="-1"></a>         <span class="at">order =</span> <span class="st">"hclust"</span>, <span class="at">addrect =</span> <span class="dv">3</span>,</span>
+<span id="cb59-9"><a href="#cb59-9" aria-hidden="true" tabindex="-1"></a>         <span class="at">pch.col =</span> <span class="st">"black"</span>,</span>
+<span id="cb59-10"><a href="#cb59-10" aria-hidden="true" tabindex="-1"></a>         <span class="at">insig =</span> <span class="st">"p-value"</span>,</span>
+<span id="cb59-11"><a href="#cb59-11" aria-hidden="true" tabindex="-1"></a>         <span class="at">sig.level =</span> <span class="sc">-</span><span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="EJERCICIOS_M1_files/figure-html/unnamed-chunk-59-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chart.Correlation</span>(m, <span class="at">histogram =</span> F, <span class="at">pch =</span> <span class="dv">10</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="EJERCICIOS_M1_files/figure-html/unnamed-chunk-59-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<hr>
+<p><strong>Resolver un sistema de ecuaciones lineales sobredeterminado.</strong></p>
+<p>Para el siguiente sistema de ecuaciones <span class="math display">\[3x+2y = 10\]</span> <span class="math display">\[5x-y = 8\]</span> <span class="math display">\[7x+3y = 20\]</span></p>
+<p>El siguiente código nos permite resolver el sistema de ecuaciones por el método de minimos cuadrados</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>x <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>)</span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">=</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="sc">-</span><span class="dv">1</span>,<span class="dv">3</span>)</span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">cbind</span>(x,y)</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>b <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">20</span>)</span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>solucion <span class="ot">&lt;-</span> <span class="fu">lm</span>(b <span class="sc">~</span> A <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a><span class="fu">coef</span>(solucion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Donde <span class="math inline">\(x = 2\)</span>, <span class="math inline">\(y = 2\)</span></p>
+<hr>
+<p><strong>Calcular la matriz de covarianza a partir de una matriz de datos.</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">831</span>)</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>C1<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>C2<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>C3<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>C4<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>C5<span class="ot">=</span><span class="fu">sample</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">1000</span>,<span class="dv">50</span>,<span class="at">replace =</span> T)</span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>m<span class="ot">=</span><span class="fu">cbind</span>(C1,C2,C3,C4,C5)</span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>cov_m <span class="ot">=</span> <span class="fu">cov</span>(m)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: right;">C1</th>
+<th style="text-align: right;">C2</th>
+<th style="text-align: right;">C3</th>
+<th style="text-align: right;">C4</th>
+<th style="text-align: right;">C5</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">C1</td>
+<td style="text-align: right;">83416.415</td>
+<td style="text-align: right;">1441.447</td>
+<td style="text-align: right;">-21477.481</td>
+<td style="text-align: right;">-3843.232</td>
+<td style="text-align: right;">10914.494</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C2</td>
+<td style="text-align: right;">1441.447</td>
+<td style="text-align: right;">73860.613</td>
+<td style="text-align: right;">-1367.201</td>
+<td style="text-align: right;">9634.976</td>
+<td style="text-align: right;">22879.698</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C3</td>
+<td style="text-align: right;">-21477.481</td>
+<td style="text-align: right;">-1367.201</td>
+<td style="text-align: right;">70152.142</td>
+<td style="text-align: right;">-11139.064</td>
+<td style="text-align: right;">5768.539</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">C4</td>
+<td style="text-align: right;">-3843.232</td>
+<td style="text-align: right;">9634.976</td>
+<td style="text-align: right;">-11139.064</td>
+<td style="text-align: right;">99672.924</td>
+<td style="text-align: right;">-2814.543</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">C5</td>
+<td style="text-align: right;">10914.494</td>
+<td style="text-align: right;">22879.698</td>
+<td style="text-align: right;">5768.539</td>
+<td style="text-align: right;">-2814.543</td>
+<td style="text-align: right;">69098.857</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><strong>Resolver un problema de aplicación que involucre vectores y matrices.</strong></p>
+<hr>
+</section>
+</section>
+<section id="bibliografía" class="level1">
+<h1>Bibliografía</h1>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p><a href="https://es.wikipedia.org/wiki/Distancia_euclidiana">Distancia euclidiana</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><a href="https://ocw.ehu.eus/pluginfile.php/40253/mod_resource/content/1/fundamen_mate/contenidos/ejercicios/ejercicios-resueltos/rango-de-una-matriz.pdf">Rango de una matriz</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><a href="https://www.universoformulas.com/matematicas/algebra/traza-matriz/">Traza de una matriz</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

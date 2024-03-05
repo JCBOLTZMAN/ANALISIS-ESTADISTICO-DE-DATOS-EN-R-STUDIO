@@ -1,0 +1,103 @@
+html{
+  font-family: "Times New Roman", Times, serif;
+}
+
+div.slide.titlepage {
+    text-align: left;
+    font-family: "Times New Roman", Times, serif;
+    background-image: url('G:/Mi unidad/TRABAJO/CLASES/ENERO-ABRIL 2023/MATERIAL REALIZADO/logo/untitleddesign_1_original-1.jpg')
+    /*background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+  */
+
+  div.slide.titlepage h1 {
+    font-family: "Times New Roman", Times, serif;
+    padding-bottom: 30%;
+    margin-right: 0;
+    background-image: url('G:/Mi unidad/TRABAJO/CLASES/ENERO-ABRIL 2023/MATERIAL REALIZADO/logo/untitleddesign_1_original-1.jpg');
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: 150px 60px;
+  }
+  
+.gdbar img {
+  width: 300px !important;
+  height: 150px !important;
+  margin: 8px 8px;
+}
+
+.gdbar {
+  width: 400px !important;
+  height: 170px !important;
+}
+
+body{
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20pt;
+  text-align: justify;
+  color:#002157;
+  background-color: #FFFFF8;
+}
+
+Headers
+h1,h2,h3,h4,h5,h6{
+  font-size: 20pt;
+  font-style: initial;
+  background-image: url('G:\Mi unidad\TRABAJO\CLASES\ENERO-ABRIL 2023\MATERIAL REALIZADO\logo\untitleddesign_1_original-1.jpg');
+}
+
+h1, h2, h3{
+  font-family: "Times New Roman", Times, serif;
+}
+
+h1.title {
+    font-size: 38px;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.tab-content tr:nth-child(odd) {
+  background: rgb(173, 228, 254, 0.2);
+  /* background-color: rgb(231, 240, 243); */
+  text-align: justify;
+  width: 100%;
+  vertical-align: center;
+  border: 1px solid #000;
+  border-spacing: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.tab-content tr:nth-child(even) {
+	background: rgba(173, 228, 254,0.6);
+  /*background-color: rgb(231, 240, 243);*/
+  text-align: justify;
+  width: 100%;
+  vertical-align: center;
+  border: 1px solid #000;
+  border-spacing: 1;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.tab-content thead {
+  background: rgb(45, 57, 99);
+  color: #fff;
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+tab-content {
+  border-collapse: collapse;
+}
+
+.nav-pills li{
+  background-color: rgb(225, 240, 247);
+  text-align: justify;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Parrafo{
+  background-color: rgb(58, 153, 197);
+  font-size: 10px;
+  font-family: "Times New Roman", Times, serif;
+}

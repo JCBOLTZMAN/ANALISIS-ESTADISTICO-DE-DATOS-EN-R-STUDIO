@@ -1,0 +1,767 @@
+---
+title: "Prueba"
+format: pdf
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,results="asis",collapse=TRUE)
+install.packages("lubridate")
+library(lubridate)
+install.packages("kableExtra")
+library(kableExtra)
+install.packages("psych")
+library(psych)
+```
+
+\newpage
+
+# Ejercicios
+
+Resolver los siguientes ejercicios de práctica
+
+## Vectores
+
+1. Crear un vector numérico con valores del 1 al 10.
+1. Crear un vector de caracteres con nombres de colores.
+1. Sumar dos vectores numéricos elemento por elemento.
+1. Calcular el producto escalar de dos vectores numéricos.
+1. Calcular la media de un vector numérico.
+1. Calcular la mediana de un vector numérico.
+1. Encontrar el valor máximo y mínimo de un vector numérico.
+1. Crear un vector booleano que identifique los números pares en un vector numérico.
+1. Crear un vector de fechas para una semana completa.
+1. Crear un vector numérico con números aleatorios.
+1. Ordenar un vector numérico de forma ascendente.
+1. Ordenar un vector numérico de forma descendente.
+1. Concatenar dos vectores numéricos.
+1. Reemplazar los valores negativos de un vector numérico por ceros.
+1. Calcular la suma acumulada de un vector numérico.
+1. Multiplicar cada elemento de un vector numérico por un escalar.
+1. Calcular la distancia euclidiana entre dos vectores numéricos.
+1. Encontrar los índices de los elementos mayores que cierto valor en un vector numérico.
+1. Crear un vector lógico que identifique los valores duplicados en un vector 1. numérico.
+1. Calcular la longitud de un vector.
+
+## Matrices
+
+1. Crear una matriz 3x3 con valores del 1 al 9.
+1. Calcular la suma de dos matrices.
+1. Calcular la resta de dos matrices.
+1. Calcular el producto de dos matrices.
+1. Calcular el determinante de una matriz cuadrada.
+1. Calcular la matriz inversa de una matriz cuadrada.
+1. Transponer una matriz.
+1. Calcular la media de cada columna de una matriz.
+1. Calcular la suma de cada fila de una matriz.
+1. Calcular el producto punto entre dos filas de una matriz.
+1. Calcular la suma de cada columna de una matriz.
+1. Extraer la diagonal de una matriz.
+1. Cambiar el nombre de las filas y columnas de una matriz.
+1. Concatenar dos matrices por filas.
+1. Concatenar dos matrices por columnas.
+1. Reemplazar los valores negativos de una matriz por ceros.
+1. Calcular la matriz de covarianza de una matriz de datos.
+1. Multiplicar cada elemento de una matriz por un escalar.
+1. Encontrar el valor máximo y mínimo de una matriz.
+
+
+## Operaciones adicionales
+
+1. Resolver un sistema de ecuaciones lineales representado por una matriz.
+1. Calcular la proyección ortogonal de un vector sobre otro.
+1. Calcular el rango de una matriz.
+1. Calcular la traza de una matriz.
+1. Calcular la matriz identidad de tamaño n.
+1. Calcular la matriz diagonal a partir de un vector.
+1. Calcular la matriz de correlación a partir de una matriz de datos.
+1. Resolver un sistema de ecuaciones lineales sobredeterminado.
+1. Calcular la matriz de covarianza a partir de una matriz de datos.
+1. Resolver un problema de aplicación que involucre vectores y matrices.
+
+\newpage
+
+# Solución
+
+Resolver los siguientes ejercicios de práctica
+
+## Vectores
+
+**Crear un vector numérico con valores del 1 al 10.**
+
+   - Opción 1:
+```{r}
+c(1,2,3,4,5,6,7,8,9,10)
+```
+   - Opción 2:
+```{r}
+1:10
+```
+   - Opción 3:
+```{r}
+seq(1,10)
+```
+
+---
+
+**Crear un vector de caracteres con nombres de colores.**
+```{r}
+c("Azul","Negro","gris","verde","naranja","rosa","rojo")
+```
+
+---
+
+**Sumar dos vectores numéricos elemento por elemento.**
+```{r}
+V1 = 1:10
+V2 = 11:20
+
+V3 = V1 + V2
+```
+El vector 1 contiene los valores $V_1 =$ `r V1`
+
+El vector 2 contiene los valores $V_2 =$ `r V2`
+
+Al sumar los valores de cada vector obtenemos $V_3 =$ `r V3`
+
+---
+
+**Calcular el producto escalar de dos vectores numéricos.**
+```{r}
+PE= V1 %*% V2
+```
+Al realizar el producto escalar de los vectores del punto anterior $V_1$ y $V_2$, el resultado es: $V_1 \cdot V_2=$ `r PE`
+
+---
+
+**Calcular la media de un vector numérico.**
+```{r}
+med = mean(V1)
+```
+Para los valores del vector $V_1 =$ la media de sus valores es: `r med`
+
+---
+
+**Calcular la mediana de un vector numérico.**
+```{r}
+mediana=median(V2)
+```
+Para los valores del vector $V_2 =$ la mediana de sus valores es: `r mediana`
+---
+
+**Encontrar el valor máximo y mínimo de un vector numérico.**
+
+```{r}
+set.seed(123)
+x<-sample(1:50, size = 10, replace = FALSE)
+
+maximo = max(x)
+
+minimo = min(x)
+```
+
+Para un vector con $10$ valores aleatorios entre $1$ y $50$, el cual contiene los valores $x = [$ `r x` $]$ el número máximo es: `r maximo` y el número mínimo del mismo vector es: `r minimo`
+
+---
+
+**Crear un vector booleano que identifique los números pares en un vector numérico.**
+```{r}
+pares = x%%2==0
+```
+Usando los mismos valores del vector $x =[$ `r x` $]$ al resolver el ejercicio obtenemos el vector $pares = [$ `r pares` $]$
+
+---
+
+**Crear un vector de fechas para una semana completa.**
+```{r}
+inicio = dmy("19/02/2024")
+fin = inicio + days(6)
+semana = seq(inicio,fin,by="day")
+```
+Para resolver este ejercicio es necesario instalar y activar el paquete `lubridate`, se debe escribir la fecha de inicio y la guardamos en $inicio =$ `r inicio` y a esta fecha sumarle $6$ días para obtener el día final de la semana o la fecha que está una semana despues de la fecha inicial $fin$ `r fin`, finalmente se genera el vector $semana$ con los valores: [$`r semana`$]
+
+---
+
+**Crear un vector numérico con números aleatorios.**
+```{r}
+set.seed(123)
+x<-sample(1:50, size = 10, replace = FALSE)
+```
+
+Podemos utilizar el mismo código para obtener el vector con números aleatorios $x =$ $[$ $`r x`$ $]$
+
+---
+
+**Ordenar un vector numérico de forma ascendente.**
+```{r}
+sort(x)
+```
+
+---
+
+**Ordenar un vector numérico de forma descendente.**
+```{r}
+sort(x, decreasing = TRUE)
+```
+
+---
+
+**Concatenar dos vectores numéricos.**
+```{r}
+set.seed(35)
+y = sample(-50:50, size = 10, replace = TRUE)
+z = sample(0:100, size = 10, replace = TRUE)
+s = c(y,z)
+```
+
+Con el código anterior se generan dos vectores con $10$ valores aleatorios siendo: $$y=[ `r y` ]$$ $$z=[ `r z` ]$$ al concatenarlos con el código `s=c(y,z)` obtenemos el siguiente vector: $$s = [`r s`]$$
+
+---
+
+**Reemplazar los valores negativos de un vector numérico por ceros.**
+```{r}
+cero = ifelse(y<0,0,y)
+```
+El código anterior genera un nuevo vector basandose en el vector $y$, pero los valores negativos de $y$ se remplazaron por $0$ obteniendo el siguiente vector $$y=[`r y`]$$ $$cero=[`r cero`]$$
+
+
+---
+
+**Calcular la suma acumulada de un vector numérico.**
+```{r}
+valores = c(5:20)
+suma = cumsum(valores)
+```
+Del vector $valores = [`r valores`]$ la suma de sus valores es: $suma =[`r suma`]$, el último valor de este vector representa la suma acumulada de todos los valores
+
+---
+
+**Multiplicar cada elemento de un vector numérico por un escalar.**
+```{r}
+k = 3
+valores_mult = k*valores
+```
+Utilizando el mismo vector del punto anterior $valores =[ `r valores`]$ y la constante $k =`r k`$, al multiplicar el vector por el escalar se obtiene el siguiente vector $v_k = [`r valores_mult`]$
+
+---
+
+**Calcular la distancia euclidiana entre dos vectores numéricos.**
+
+La distancia euclidiana entre dos vectores numéricos la define la ecuación [^1]: $$d_E (P,Q) = \sqrt{\left( p_1-q_1 \right)^2 + \left(p_2 - q_2 \right)^2+...\left( p_n-q_n \right)^2} = \sqrt{\varSigma_{i=1}^{n}\left( p_i-q_i \right)^2}$$
+
+```{r}
+set.seed(61)
+a = sample(1:100, size = 10, replace = TRUE)
+b = sample(1:100, size = 10, replace = TRUE)
+d = sqrt ( sum ((a - b) ^ 2))
+```
+Para los vectores $a$ y $b$ la distancia euclidiana es: $`r d`$ $$a=[`r a`]$$ $$b=[`r b`]$$
+
+[^1]: https://es.wikipedia.org/wiki/Distancia_euclidiana
+
+---
+
+**Encontrar los índices de los elementos mayores que cierto valor en un vector numérico.**
+```{r}
+numero = 50
+set.seed(61)
+c = sample(1:100, size = 5, replace = TRUE)
+
+indice = which(c > numero)
+c
+indice
+```
+
+---
+
+Crear un vector lógico que identifique los valores duplicados en un vector numérico.
+```{r results='hold'}
+set.seed(65)
+c = sample(1:5, size = 5, replace = TRUE)
+vector_logico <- duplicated(c) | duplicated(c, fromLast = TRUE)
+c
+vector_logico
+```
+
+---
+
+**Calcular la longitud de un vector.**
+```{r results='hold'}
+a
+length(a)
+```
+
+
+## Matrices
+
+En este documento no se podrá observar la forma de la matriz, sin embargo, se observarán los datos de estas, la forma de la matriz creada u obtenida solo se vería si las operaciones se realizan en la consola de `RStudio`
+
+**Crear una matriz 3x3 con valores del 1 al 9.**
+```{r}
+matrix(1:9, nrow = 3)
+```
+Genera la matriz siguiente
+
+\begin{equation}
+  \begin{vmatrix}
+    &1 & 4 & 7&\\
+    &2 & 5 & 8&\\
+    &3 & 6 & 9&
+  \end{vmatrix}
+\end{equation}
+
+---
+
+**Calcular la suma de dos matrices.**
+```{r}
+m1 = matrix(5:20, nrow=4)
+m2 = matrix(25:40, nrow = 4)
+
+m3 = m1+m2
+kable(m3)
+```
+\begin{equation} m_1 =
+  \begin{vmatrix}
+     &5 & 9 & 13  & 17& \\
+     &6 & 10 & 14 & 18& \\
+     &7 & 11 & 15 & 19& \\
+     &8 & 12 & 16 & 20&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} m_2 =
+  \begin{vmatrix}
+     &25 & 29 & 33  & 37& \\
+     &26 & 30 & 34 & 38& \\
+     &27 & 31 & 35 & 39& \\
+     &28 & 32 & 36 & 40&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} m_3 = m_1 + m_2 =
+  \begin{vmatrix}
+     & 30 & 38 & 46 & 54 & \\
+     & 32 & 40 & 48 & 56 & \\
+     & 34 & 42 & 50 & 58 & \\
+     & 36 & 44 & 52 & 60 &
+  \end{vmatrix}
+\end{equation}
+
+
+---
+
+**Calcular la resta de dos matrices.**
+```{r}
+m1 = matrix(5:20, nrow=4)
+m2 = matrix(25:40, nrow = 4)
+
+m3 = m1-m2
+kable(m3)
+```
+
+\begin{equation} m_1 =
+  \begin{vmatrix}
+     &5 & 9 & 13  & 17& \\
+     &6 & 10 & 14 & 18& \\
+     &7 & 11 & 15 & 19& \\
+     &8 & 12 & 16 & 20&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} m_2 =
+  \begin{vmatrix}
+     &25 & 29 & 33  & 37& \\
+     &26 & 30 & 34 & 38& \\
+     &27 & 31 & 35 & 39& \\
+     &28 & 32 & 36 & 40&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} m_3 = m_1 - m_2 =
+  \begin{vmatrix}
+     & -20 & -20 & -20 &-20& \\
+     & -20 & -20 & -20 &-20& \\
+     & -20 & -20 & -20 &-20& \\
+     & -20 & -20 & -20 &-20&
+  \end{vmatrix}
+\end{equation}
+
+---
+
+**Calcular el producto de dos matrices.**
+```{r}
+m1 = matrix(5:20, nrow=4)
+m2 = matrix(25:40, nrow = 4)
+
+m3 = m1*m2
+kable(m3)
+
+```
+
+\begin{equation} m_1 =
+  \begin{vmatrix}
+     &5 & 9 & 13  & 17& \\
+     &6 & 10 & 14 & 18& \\
+     &7 & 11 & 15 & 19& \\
+     &8 & 12 & 16 & 20&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} m_2 =
+  \begin{vmatrix}
+     &25 & 29 & 33  & 37& \\
+     &26 & 30 & 34 & 38& \\
+     &27 & 31 & 35 & 39& \\
+     &28 & 32 & 36 & 40&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} m_3 = m_1 * m_2
+  \begin{vmatrix}
+     & 125 & 261 & 429 & 629 & \\
+     & 156 & 300 & 476 & 684 & \\
+     & 189 & 341 & 525 & 741 & \\
+     & 224 & 384 & 576 & 800 &
+  \end{vmatrix}
+\end{equation}
+
+---
+
+**Calcular el determinante de una matriz cuadrada.**
+
+```{r}
+a<-c(4,5,4)
+b<-c(3,4,4)
+d<-c(8,7,7)
+B<-rbind(a,b,d)
+det(B)
+```
+
+\begin{equation} det(B) = det
+  \begin{vmatrix}
+     & 4 & 5 & 4 \\
+     & 3 & 4 & 4 \\
+     & 8 & 7 & 7
+  \end{vmatrix}  = 11
+\end{equation}
+
+
+---
+
+**Calcular la matriz inversa de una matriz cuadrada.**
+```{r}
+a<-c(4,5,4)
+b<-c(3,4,4)
+d<-c(8,7,7)
+B<-rbind(a,b,d)
+kable(solve(B))
+```
+
+---
+
+__Transponer una matriz__
+```{r}
+set.seed(876)
+C1=sample(1:1000,10,replace = F)
+C2=sample(1:1000,10,replace = F)
+C3=sample(1:1000,10,replace = F)
+C4=sample(1:1000,10,replace = F)
+C5=sample(1:1000,10,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+t_m=t(m)
+colnames(t_m) = c("A","B","C","D","E",
+                  "F","G","H","I","J")
+kable(t_m)
+```
+
+---
+
+__Calcular la media de cada columna de una matriz__
+```{r}
+set.seed(876)
+C1=sample(1:1000,100,replace = F)
+C2=sample(1:1000,100,replace = F)
+C3=sample(1:1000,100,replace = F)
+C4=sample(1:1000,100,replace = F)
+C5=sample(1:1000,100,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+media = colMeans(m)
+m=rbind(m,media)
+kable(headTail(m))
+```
+
+---
+
+__Calcular la suma de cada fila de una matriz__
+```{r}
+set.seed(876)
+C1=sample(1:1000,100,replace = F)
+C2=sample(1:1000,100,replace = F)
+C3=sample(1:1000,100,replace = F)
+C4=sample(1:1000,100,replace = F)
+C5=sample(1:1000,100,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+suma = rowSums(m)
+m=cbind(m,suma)
+kable(headTail(m))
+```
+
+---
+
+__Calcular el producto punto entre dos filas de una matriz__
+
+Para este ejemplo las filas de la matriz deberán usarse como vectores, para realizar el producto punto.
+
+El producto punto es la suma de los productos de cada elemento de cada vector, en el caso de dos vectores. $$v_1 \cdot v_2 = (a_{v_1}*a_{v_2})+(b_{v_1}*b_{v_2})+(c_{v_1}*c_{v_2})+...$$
+
+```{r message=FALSE,warning=FALSE}
+set.seed(876)
+C1=sample(1:1000,100,replace = F)
+C2=sample(1:1000,100,replace = F)
+C3=sample(1:1000,100,replace = F)
+C4=sample(1:1000,100,replace = F)
+C5=sample(1:1000,100,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+kable(headTail(m))
+```
+
+De esta matriz usaremos la fila $1$ y $2$, para obtener el producto punto.
+
+```{r echo=FALSE, results='hide'}
+f1=m[1,]
+f2=m[2,]
+```
+Donde cada fila tendrá los siguientes valores: $$f1= `r f1`$$ $$f_2= `r f2`$$ el producto punto lo obtenemos con el siguiente código
+```{r}
+r=f1%*%f2
+```
+Obteniendo el valor $`r r`$
+
+---
+
+**Calcular la suma de cada columna de una matriz.**
+```{r}
+set.seed(876)
+C1=sample(1:1000,100,replace = F)
+C2=sample(1:1000,100,replace = F)
+C3=sample(1:1000,100,replace = F)
+C4=sample(1:1000,100,replace = F)
+C5=sample(1:1000,100,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+suma = colSums(m)
+m=rbind(m,suma)
+kable(headTail(m))
+
+```
+
+---
+
+**Extraer la diagonal de una matriz.**
+```{r}
+a<-c(4,5,4)
+b<-c(3,4,4)
+d<-c(8,7,7)
+B<-rbind(a,b,d)
+kable(B)
+```
+De la matriz mostrada los valores de la diagonal son: `r diag(B)` con el siguiente código:
+```{r eval=FALSE}
+diag(B)
+```
+
+---
+
+**Cambiar el nombre de las filas y columnas de una matriz.**
+```{r}
+a<-c(4,5,4)
+b<-c(3,4,4)
+d<-c(8,7,7)
+B<-rbind(a,b,d)
+kable(B)
+```
+Las columnas de esta matriz no están nombradas y las filas se llamán `r rownames(B)`, con el siguiente código se pueden modificar ambas caracteristicas de la matriz.
+
+```{r}
+colnames(B)=c("C1","C2","C3")
+rownames(B)=c("F1","F2","F3")
+kable(B)
+```
+
+---
+
+**Concatenar dos matrices por filas.**
+```{r}
+A <- matrix(c(1,2,3,4), nrow = 2, ncol = 2)
+B <- matrix(c(10,11,12,13), nrow = 2, ncol = 2)
+kable(A)
+kable(B)
+
+kable(rbind(A,B))
+```
+
+---
+
+**Concatenar dos matrices por columnas.**
+```{r}
+A <- matrix(c(1,2,3,4), nrow = 2, ncol = 2)
+B <- matrix(c(10,11,12,13), nrow = 2, ncol = 2)
+kable(A)
+kable(B)
+
+kable(cbind(A,B))
+```
+
+
+
+---
+
+**Reemplazar los valores negativos de una matriz por ceros.**
+```{r}
+set.seed(879)
+A=matrix(sample(-1000:1000,16,replace = F),nrow = 4)
+kable(A)
+cero = ifelse(A<0,0,A)
+kable(cero)
+```
+
+---
+
+Calcular la matriz de covarianza de una matriz de datos.
+```{r}
+set.seed(174)
+C1=sample(1:1000,10,replace = F)
+C2=sample(1:1000,10,replace = F)
+C3=sample(1:1000,10,replace = F)
+C4=sample(1:1000,10,replace = F)
+C5=sample(1:1000,10,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+cov_m=cov(m)
+kable(m)
+kable(cov_m)
+```
+
+---
+
+**Multiplicar cada elemento de una matriz por un escalar.**
+```{r}
+set.seed(14)
+C1=sample(1:1000,10,replace = F)
+C2=sample(1:1000,10,replace = F)
+C3=sample(1:1000,10,replace = F)
+C4=sample(1:1000,10,replace = F)
+C5=sample(1:1000,10,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+kable(m)
+k = 4
+m = m*k
+kable(m)
+```
+
+
+---
+
+**Encontrar el valor máximo y mínimo de una matriz.**
+```{r results='hold'}
+set.seed(4)
+C1=sample(1:1000,10,replace = F)
+C2=sample(1:1000,10,replace = F)
+C3=sample(1:1000,10,replace = F)
+C4=sample(1:1000,10,replace = F)
+C5=sample(1:1000,10,replace = F)
+m=cbind(C1,C2,C3,C4,C5)
+kable(m)
+min(m)
+max(m)
+```
+De esta matriz el valor máximo es $`r max(m)`$ y el valor mínimo es $`r min(m)`$
+
+---
+
+
+## Operaciones adicionales
+
+__Resolver un sistema de ecuaciones lineales representado por una matriz__
+
+Resolver el siguiente sistema de ecuaciones:
+$$3x-3y-5z=-77$$
+$$8x-7y-5z=-138$$
+$$-4x+4y+7z=105$$
+
+Primero generaremos la matriz de los coeficientes de cada variable en cada ecuación y el vector de los resultados, obteniendo lo siguiente:
+\begin{equation} coeficientes=
+  \begin{vmatrix}
+    &3 & -3 & -5&\\
+    &8 & -7 & -5&\\
+    &-4 & 4 & 7&
+  \end{vmatrix}
+\end{equation}
+
+\begin{equation} resultados=
+  \begin{vmatrix}
+    &-77 & \\
+    &-138 & \\
+    &105 & 
+  \end{vmatrix}
+\end{equation}
+
+Con el siguiente código
+```{r}
+x=c(3,8,-4)
+y=c(-3,-7,4)
+z=c(-5,-5,7)
+coeficientes=cbind(x,y,z)
+resultados = c(-77,-138,105)
+```
+
+Debemos calcular la matriz inversa de los coeficientes con el siguiente código
+```{r}
+C_1=solve(coeficientes)
+```
+
+Obteniendo la siguiente matriz
+```{r}
+kable(C_1)
+```
+
+Finalmente realizamos el producto punto con la matriz inversa obtenida y el vector de resultados obteniendo los valores de las variables
+```{r}
+sol = C_1%*%resultados
+kable(sol)
+```
+
+---
+
+__Calcular la proyección ortogonal de un vector sobre otro.__
+
+La teoría de la proyección de un vector en otro vector lo puedes encontrar en el siguiente link [Proyección de un vector sobre otro vector. Ejercicios resueltos](https://ekuatio.com/proyeccion-de-un-vector-sobre-otro-vector-ejercicios-resueltos/), de esa fuente podemos obtener las siguientes formulas
+$$\left| \vec{P_{u,v}} \right|= \frac{\vec{u} \cdot \vec{v}}{\left| \vec{v}\right|}$$
+$$\vec{P_{u,v}} = \frac{\vec{u} \cdot \vec{v}}{\left| \vec{v}\right|} \cdot \vec{u}$$
+Las cuales representan el módulo y el vector de la proyección de un vector sobre otro, el modulo es un escalar $\left| \vec{P_{u,v}} \right|$.
+
+Debemos definir los vectores siguientes: $$\vec{u} = \langle 1,3,7 \rangle$$ $$\vec{v} = \langle -1,2,-5 \rangle$$ con el siguiente código:
+```{r}
+u=c(1,3,7)
+v=c(-1,2,-5)
+```
+
+Determinaremos el módulo del vector $\vec{u}$ con el siguiente código:
+```{r}
+mod_v = norm(v,type = "2")
+mod_v
+```
+
+Con este valor podemos utilizar la formula completa para obtener el vector de la proyección de $\vec{u}$ sobre $\vec{v}$
+```{r warning=FALSE}
+proy_uv = ((u%*%v)/mod_v)*v
+```
+Obteniendo el vector $\vec{P_{u,v}} =\langle `r round(proy_uv,4)`\rangle$ y su módulo es: $\left| \vec{P_{u,v}} \right| = `r round(norm(proy_uv,type="2"),4)`$
+
+---
+1. Calcular el rango de una matriz.
+1. Calcular la traza de una matriz.
+1. Calcular la matriz identidad de tamaño n.
+1. Calcular la matriz diagonal a partir de un vector.
+1. Calcular la matriz de correlación a partir de una matriz de datos.
+1. Resolver un sistema de ecuaciones lineales sobredeterminado.
+1. Calcular la matriz de covarianza a partir de una matriz de datos.
+1. Resolver un problema de aplicación que involucre vectores y matrices.
