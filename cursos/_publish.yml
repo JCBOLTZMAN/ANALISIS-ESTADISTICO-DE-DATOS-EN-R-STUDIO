@@ -1,0 +1,4 @@
+- source: pRUEBA.qmd
+  quarto-pub:
+    - id: 0a545b0e-67e2-4093-be1a-795ae10ad9c1
+      url: 'https://jcboltzman.quarto.pub/análisis-estadístico-de-datos-en-r-studio'

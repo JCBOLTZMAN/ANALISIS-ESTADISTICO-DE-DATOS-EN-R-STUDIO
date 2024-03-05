@@ -2,16 +2,14 @@
 title: "ANÁLISIS ESTADÍSTICO DE DATOS EN R-STUDIO"
 subtitle: __CON APLICACIONES EN INGENIERÍA QUÍMICA, QUÍMICA FARMACÉUTICA Y ENERGÍAS RENOVABLES__
 author: "I.Q. JUAN CARLOS MARTÍNEZ MARTÍNEZ"
-format:
-  revealjs:
-    slide-number: true
-    show-slide-number: print
-    chalkboard: true
-    scrollable: true
-    logo: "https://github.com/JCBOLTZMAN/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/blob/main/cursos/img/5.png?raw=true"
-    footer: "Más Ciencia"
-    transition: zoom
-    background-transition: slide
+format: revealjs
+slide-number: true
+chalkboard: true
+scrollable: true
+logo: "https://github.com/JCBOLTZMAN/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/blob/main/cursos/img/5.png?raw=true"
+footer: "Más Ciencia"
+transition: zoom
+background-transition: slide
 
 title-slide-attributes:
   data-background-image: "https://github.com/JCBOLTZMAN/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/blob/main/cursos/img/1.png?raw=true"
@@ -21,10 +19,6 @@ title-slide-attributes:
 css: styles.css
 bibliography: library.bib
 csl: apa.csl
-toc: False
-toc-expand: False
-toc-depth: 2.0
-toc-title: Temario
 lang: "es-MX"
 ---
 
@@ -54,7 +48,7 @@ library(PerformanceAnalytics)
 -   Software de código abierto
 -   Diseñado con el propósito de hacer estadística
 -   Lenguaje interpretado
-    -   Si sintaxis es simple e intuitiva
+    -   Su sintaxis es simple e intuitiva
 
 ```{r echo=TRUE, eval=FALSE}
 combinations(3,2,letters[1:3])
