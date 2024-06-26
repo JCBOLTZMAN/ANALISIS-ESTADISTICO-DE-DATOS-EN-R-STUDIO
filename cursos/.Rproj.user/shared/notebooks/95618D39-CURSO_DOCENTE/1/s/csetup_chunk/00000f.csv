@@ -1,0 +1,163 @@
+"0","knitr::opts_chunk$set(echo = TRUE,"
+"0","                      collapse=TRUE, "
+"0","                      results = ""hide"","
+"0","                      warning = FALSE)"
+"0","install.packages(""knitr"")"
+"1","The following package(s) will be installed:
+"
+"1","- knitr [1.45]
+"
+"1","These packages will be installed into ""C:/Users/jcarl/Desktop/CURSO_NUEVO/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/cursos/renv/library/R-4.3/x86_64-w64-mingw32"".
+"
+"1","
+"
+"0","y"
+"1","
+"
+"1","# Installing packages --------------------------------------------------------
+"
+"1","- Installing knitr ...                          "
+"1","OK [linked from cache]
+"
+"1","Successfully installed 1 package in 46 milliseconds.
+"
+"0","library(knitr)"
+"0","install.packages(""lubridate"")"
+"1","The following package(s) will be installed:
+"
+"1","- lubridate [1.9.3]
+"
+"1","These packages will be installed into ""C:/Users/jcarl/Desktop/CURSO_NUEVO/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/cursos/renv/library/R-4.3/x86_64-w64-mingw32"".
+"
+"1","
+"
+"0","y"
+"1","
+"
+"1","# Installing packages --------------------------------------------------------
+"
+"1","- Installing lubridate ...                      "
+"1","OK [linked from cache]
+"
+"1","Successfully installed 1 package in 51 milliseconds.
+"
+"0","library(lubridate)"
+"2","
+Attaching package: ‘lubridate’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    date, intersect, setdiff, union
+
+"
+"0","install.packages(""kableExtra"")"
+"1","The following package(s) will be installed:
+"
+"1","- kableExtra [1.4.0]
+"
+"1","These packages will be installed into ""C:/Users/jcarl/Desktop/CURSO_NUEVO/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/cursos/renv/library/R-4.3/x86_64-w64-mingw32"".
+"
+"1","
+"
+"0","y"
+"1","
+"
+"1","# Installing packages --------------------------------------------------------
+"
+"1","- Installing kableExtra ...                     "
+"1","OK [linked from cache]
+"
+"1","Successfully installed 1 package in 45 milliseconds.
+"
+"0","library(kableExtra)"
+"2","Registered S3 methods overwritten by 'htmltools':
+  method               from         
+  print.html           tools:rstudio
+  print.shiny.tag      tools:rstudio
+  print.shiny.tag.list tools:rstudio
+"
+"0","install.packages(""psych"")"
+"1","The following package(s) will be installed:
+"
+"1","- psych [2.4.3]
+"
+"1","These packages will be installed into ""C:/Users/jcarl/Desktop/CURSO_NUEVO/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/cursos/renv/library/R-4.3/x86_64-w64-mingw32"".
+"
+"1","
+"
+"0","y"
+"1","
+"
+"1","# Installing packages --------------------------------------------------------
+"
+"1","- Installing psych ...                          "
+"1","OK [linked from cache]
+"
+"1","Successfully installed 1 package in 52 milliseconds.
+"
+"0","library(psych)"
+"0","install.packages(""corrplot"")"
+"1","The following package(s) will be installed:
+"
+"1","- corrplot [0.92]
+"
+"1","These packages will be installed into ""C:/Users/jcarl/Desktop/CURSO_NUEVO/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/cursos/renv/library/R-4.3/x86_64-w64-mingw32"".
+"
+"1","
+"
+"0","y"
+"1","
+"
+"1","# Installing packages --------------------------------------------------------
+"
+"1","- Installing corrplot ...                       "
+"1","OK [linked from cache]
+"
+"1","Successfully installed 1 package in 45 milliseconds.
+"
+"0","library(corrplot)"
+"2","corrplot 0.92 loaded
+"
+"0","install.packages(""PerformanceAnalytics"")"
+"1","The following package(s) will be installed:
+"
+"1","- PerformanceAnalytics [2.0.4]
+"
+"1","These packages will be installed into ""C:/Users/jcarl/Desktop/CURSO_NUEVO/ANALISIS-ESTADISTICO-DE-DATOS-EN-R-STUDIO/cursos/renv/library/R-4.3/x86_64-w64-mingw32"".
+"
+"1","
+"
+"0","y"
+"1","
+"
+"1","# Installing packages --------------------------------------------------------
+"
+"1","- Installing PerformanceAnalytics ...           "
+"1","OK [linked from cache]
+"
+"1","Successfully installed 1 package in 58 milliseconds.
+"
+"0","library(PerformanceAnalytics)"
+"2","Loading required package: xts
+"
+"2","Loading required package: zoo
+"
+"2","
+Attaching package: ‘zoo’
+
+"
+"2","The following objects are masked from ‘package:base’:
+
+    as.Date, as.Date.numeric
+
+"
+"2","
+Attaching package: ‘PerformanceAnalytics’
+
+"
+"2","The following object is masked from ‘package:graphics’:
+
+    legend
+
+"

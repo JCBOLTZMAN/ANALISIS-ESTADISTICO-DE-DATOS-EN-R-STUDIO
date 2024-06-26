@@ -1,0 +1,2 @@
+"0","x <- 1:10 # definimos un vector con los valores consecutivos del 1 al 10"
+"0","y <- c(-5:0,5:15,3,2,1) # definimos un vector con los valores consecutivos del -5 al 0, del 5 al 15 y finalmente los valores 3,2,1"

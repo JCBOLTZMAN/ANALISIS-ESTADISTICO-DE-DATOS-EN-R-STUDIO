@@ -2,3 +2,15 @@
   quarto-pub:
     - id: 0a545b0e-67e2-4093-be1a-795ae10ad9c1
       url: 'https://jcboltzman.quarto.pub/análisis-estadístico-de-datos-en-r-studio'
+    - id: a3accfd3-fef1-4272-9b3b-370bcab8ec00
+      url: 'https://jcboltzman.quarto.pub/análisis-estadístico-de-datos-en-r-studio'
+- source: CURSO_DOCENTE.qmd
+  quarto-pub:
+    - id: f898f0fe-1058-459a-93fe-3c4c1b50824a
+      url: 'https://jcboltzman.quarto.pub/análisis-estadístico-de-datos-en-r-studio'
+    - id: c8128e7f-2464-4959-b6ff-4e9d398c82eb
+      url: 'https://jcboltzman.quarto.pub/modulo_1qmd'
+- source: Prueba2.qmd
+  quarto-pub:
+    - id: 0e647575-bd27-4cd0-8f94-7e788623f757
+      url: 'https://cursos.quarto.pub/modulo1'
